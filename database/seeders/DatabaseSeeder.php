@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        Post::factory()->count(2)->create();
+        Post::factory()->count(5)->create(['user_id' =>8]);
     }
 }
