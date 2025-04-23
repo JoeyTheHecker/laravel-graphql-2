@@ -6,7 +6,7 @@ type User {
     created_at: DateTime!
     updated_at: DateTime!
     posts: [Post]! @hasMany
-}
+}   
 
 extend type Query {
       users: [User!]! @paginate(defaultCount: 10)
